@@ -1,0 +1,57 @@
+.imageN {
+    max-width: 140px !important;
+}
+
+.imageOutgoing {
+    max-width: 69% !important;
+}
+
+.imageTranOut {
+    max-width: 60% !important;
+}
+
+.inCommingCard {
+    background-image: url('../image/INCOMMING.png');
+}
+
+.containerImage {
+    position: relative;
+    text-align: center;
+
+}
+
+.centeredTextIMG {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Circular */
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.btn-circle.btn-xl {
+    width: 300;
+    height: 300;
+    border-radius: 35px;
+    text-align: center;
+}
+
+/* Circular END */
