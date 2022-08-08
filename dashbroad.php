@@ -8,6 +8,7 @@
     <title>TVS Station Report : Daily Report</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./custom/six.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -35,6 +36,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-primary" onclick="location.reload();"><i
+                        class="bi bi-arrow-repeat"></i></button>
+            </div>
         </div>
     </nav>
     <!-- navbar end -->
@@ -47,9 +52,9 @@
                         <h3>INCOMMING</h3>
                         <div class="row">
                             <div class="col-6 d-grid gap-4">
-                                <div class="containerImage">        
-                                <img src="./image/nutzNRT0.png" class="img-fluid my-1 mx-auto d-block mt-5 " alt="">
-                                <h5 class="centeredTextIMG">NUTz</h5>
+                                <div class="containerImage">
+                                    <img src="./image/nutzNRT0.png" class="img-fluid my-1 mx-auto d-block mt-5 " alt="">
+                                    <h5 class="centeredTextIMG">NUTz</h5>
                                 </div>
                                 <img src="./image/nutzNRT0.png" class="img-fluid my-1 mx-auto d-block " alt="">
                             </div>
@@ -123,7 +128,7 @@
                             <h3 c>BROADCAST FACILITY</h3>
                             <div class="row text-center">
                                 <div class="col-3 text-center">
-                                    <h6 class="my-auto">SLA 10 MIN</h6>
+                                    <h6 class="ms-2">SLA 10 MIN</h6>
                                 </div>
                                 <div class="col-3 ">
                                     <button type="button" class=" btn btn-secondary w-100">Electrical</button>
@@ -132,7 +137,7 @@
                                     <button type="button" class=" btn btn-secondary w-100">Chiller</button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <h6 class="">SLA 20 MIN</h6>
+                                    <h6 class="ms-2">SLA 20 MIN</h6>
                                 </div>
                             </div>
 
@@ -163,6 +168,14 @@
                             <img src="./image/nutzNRT0.png" class="img-fluid mx-auto d-block my-1 imageTranOut" alt="">
                             <img src="./image/nutzNRT0.png" class="img-fluid mx-auto d-block my-1 imageTranOut" alt="">
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card w-100 mt-1">
+                    <div class=" card-body">
+                        <button type="button" class="btn btn-warning mx-1 ">NSA : ???</button>
+                        <button type="button" class="btn btn-danger  mx-1 ">SA : ???</button>
                     </div>
                 </div>
             </div>
