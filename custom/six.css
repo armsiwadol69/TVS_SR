@@ -1,5 +1,5 @@
 .imageN {
-    max-width: 140px !important;
+    max-width: 130px !important;
 }
 
 .imageOutgoing {
@@ -11,7 +11,7 @@
 }
 
 .inCommingCard {
-    background-image: url('../image/INCOMMING.png');
+    background-image: url('../image/bg_income.jpg');
 }
 
 .containerImage {
@@ -59,6 +59,23 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    /* overflow-y: hidden; 
+    overflow-x: hidden;  */
+    -webkit-scrollbar-display: none;  /* Safari and Chrome */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
+
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    }
+    
