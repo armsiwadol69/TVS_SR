@@ -21,6 +21,9 @@ if(isset($_GET['datePicker'])){
     <link rel="stylesheet" href="./custom/six.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./custom/aos/aos.css">
+    <link rel="preload" as="image" href="./image/nutzNormal.png">
+    <link rel="preload" as="image" href="./image/nutzNSA.png">
+    <link rel="preload" as="image" href="./image/nutzSA.png">
 </head>
 
 <body>
