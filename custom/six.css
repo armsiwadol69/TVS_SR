@@ -95,15 +95,13 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-    overflow-x: hidden;
-   
-    
+    max-height: 1080px;
+    max-width: 1920px; 
 }
 
 html {
     overflow: scroll;
     overflow-x: hidden;
-    
 }
 
 ::-webkit-scrollbar {
