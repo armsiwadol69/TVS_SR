@@ -10,22 +10,22 @@ function TotalSum($nsa,$sa){
 
 function incomeingStatusLeftOne($serviceName, $nsa, $sa)
 {
-    echo '<div class="containerImage">' . "\r\n";
+    echo '<div class="containerImage d-flex align-items-center">' . "\r\n";
     if (!$sa == "0") {
 
-        echo '<img src="./image/nutzSA.png" class="img-fluid my-1 mx-auto d-block mt-5 " alt="SA">' . "\r\n";
+        echo '<img src="./image/nutzSA.png" class="img-fluid my-1 mx-auto d-block" alt="SA">' . "\r\n";
         $statusReturn = '<span class="text-danger">SA</span>';
 
     } else if (!$nsa == "0") {
 
         
-        echo '<img src="./image/nutzNSA.png" class="img-fluid my-1 mx-auto d-block mt-5 " alt="NSA">' . "\r\n";
+        echo '<img src="./image/nutzNSA.png" class="img-fluid my-1 mx-auto d-block" alt="NSA">' . "\r\n";
         $statusReturn = '<span class="text-warning">NSA</span>';
 
 
     } else {
 
-        echo '<img src="./image/nutzNormal.png" class="img-fluid my-1 mx-auto d-block mt-5 " alt="NORMAL">' . "\r\n";
+        echo '<img src="./image/nutzNormal.png" class="img-fluid my-1 mx-auto d-block" alt="NORMAL">' . "\r\n";
         $statusReturn = '<span class="text-info">NORMAL</span>';
 
     }
@@ -37,7 +37,7 @@ function incomeingStatusLeftOne($serviceName, $nsa, $sa)
 
 function incomeingStatusLeftTwo($serviceName, $nsa, $sa)
 {
-    echo '<div class="containerImage">' . "\r\n";
+    echo '<div class="containerImage d-flex align-items-center">' . "\r\n";
     if (!$sa == "0") {
 
         echo '<img src="./image/nutzSA.png" class="img-fluid my-1 d-block" alt="SA">' . "\r\n";

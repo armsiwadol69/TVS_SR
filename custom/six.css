@@ -1,5 +1,6 @@
 .imageN {
-    max-width: 130px !important;
+    max-width: 100% !important;
+    width: 130px !important;
 }
 
 .imageOutgoing {
@@ -12,6 +13,9 @@
 
 .inCommingCard {
     background-image: url('../image/bg_income.jpg');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: 100% 100%;  /* LOL */
 }
 
 .containerImage {
@@ -27,6 +31,22 @@
     transform: translate(-50%, -50%);
 
 }
+
+h1 {
+    font-size: 5.9vw;
+}
+
+h2 {
+    font-size: 3.0vh;
+}
+h3 {
+    font-size: 3.0vh;
+}
+
+p {
+    font-size: 2vmin;
+}
+
 
 /* Circular */
 .btn-circle.btn-sm {
@@ -61,21 +81,30 @@ body {
     font-family: 'Kanit', sans-serif;
     /* overflow-y: hidden; 
     overflow-x: hidden;  */
-    -webkit-scrollbar-display: none;  /* Safari and Chrome */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+    -webkit-scrollbar-display: none;
+    /* Safari and Chrome */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    max-height: 1080px;
+    max-width: 1920px; 
+}
 
-  html {
+html {
     overflow: scroll;
     overflow-x: hidden;
-    }
-    ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-    }
-    /* Optional: show position indicator in red */
-    ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
     background: #FF0000;
-    }
-    
+
+}
