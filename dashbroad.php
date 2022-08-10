@@ -8,6 +8,27 @@ if(isset($_GET['datePicker'])){
     $datelogToload = date("Y-m-d H:i:s");
 }
 
+//How to insert Value
+//        ServiceName   Case  Case
+// functionName('Name','NSA','SA');
+
+// All Available Fuhnction : 
+
+// incomeingStatusLeftOne();  
+// incomeingStatusLeftTwo();
+
+// incomeingStatusRightSide();
+
+// broadcastSystemStatus();
+
+// outgoingTop();
+// outgoingBottom();
+
+// transmissionStatus();
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +39,7 @@ if(isset($_GET['datePicker'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS Station Report : Daily Report</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./custom/six.css">
+    <link rel="stylesheet" href="./custom/six.css?v=2">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./custom/aos/aos.css">
     <link rel="preload" as="image" href="./image/nutzNormal.png">
@@ -59,7 +80,7 @@ if(isset($_GET['datePicker'])){
     <!-- navbar end -->
 
     <div class="container-fluid">
-        <div class="row mt-1">
+        <div class="row mt-1 gy-1">
             <div class="col-lg-4">
                 <div class="card w-100 h-100 shadow-sm" data-aos="fade-right">
                     <div class="card-body text-center inCommingCard">
@@ -72,9 +93,9 @@ if(isset($_GET['datePicker'])){
 
                             </div>
                             <div class="col-6 mt-2">
-                                
+
                                 <?php
-                                incomeingStatusRightSide('Satellite','0','1');
+                                incomeingStatusRightSide('Satellite','1','0');
                                 incomeingStatusRightSide('Radio','0','0');
                                 incomeingStatusRightSide('DTT','0','0');
                                 incomeingStatusRightSide('DLTV','0','0');
@@ -166,10 +187,10 @@ if(isset($_GET['datePicker'])){
                                     <h6 class="ms-2 my-2">SLA 10 MIN</h6>
                                 </div>
                                 <div class="col-3 ">
-                                    <button type="button" class=" btn btn-secondary w-100">Electrical</button>
+                                    <button type="button" class=" btn btn-secondary btn-lg w-100">Electrical</button>
                                 </div>
                                 <div class="col-3 ">
-                                    <button type="button" class=" btn btn-secondary w-100">Chiller</button>
+                                    <button type="button" class=" btn btn-secondary btn-lg w-100">Chiller</button>
                                 </div>
                                 <div class="col-3 text-center h-100">
                                     <h6 class="ms-2 my-2">SLA 20 MIN</h6>
@@ -216,8 +237,7 @@ if(isset($_GET['datePicker'])){
                                 transmissionStatus('TRUE ID','0','0');
                             ?>
                             <a data-bs-toggle="tooltip" data-bs-placement="top" title="SLA SWITCH TO BACKUP SITE (PLAN 10 MIN / UNPLAN 30 MIN)
-SLA 6 HR. ONLY H/E CATV & COMMUNICATION LINK"><i
-                                    class="bi bi-info-square"></i></a>
+SLA 6 HR. ONLY H/E CATV & COMMUNICATION LINK"><i class="bi bi-info-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -262,6 +282,7 @@ SLA 6 HR. ONLY H/E CATV & COMMUNICATION LINK"><i
                 </div>
 
             </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <script src="./custom/aos/aos.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
                 integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
@@ -269,10 +290,15 @@ SLA 6 HR. ONLY H/E CATV & COMMUNICATION LINK"><i
             <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
             <script>
+            $('img').bind('contextmenu', function(e) {
+                return false;
+            });
+
             AOS.init({
                 duration: 1200,
                 once: true,
             });
+
 
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {

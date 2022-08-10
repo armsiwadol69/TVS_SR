@@ -18,6 +18,14 @@
     background-size: 100% 100%;  /* LOL */
 }
 
+img{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 .containerImage {
     position: relative;
     text-align: center;
@@ -44,7 +52,7 @@ h3 {
 }
 
 p {
-    font-size: 2vmin;
+    font-size: 1.9vmin;
 }
 
 
