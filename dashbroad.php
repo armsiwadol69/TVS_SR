@@ -18,7 +18,7 @@ if(isset($_GET['datePicker'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS Station Report : Daily Report</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./custom/six.css">
+    <link rel="stylesheet" href="./custom/six.css?v=2">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./custom/aos/aos.css">
     <link rel="preload" as="image" href="./image/nutzNormal.png">
@@ -166,10 +166,10 @@ if(isset($_GET['datePicker'])){
                                     <h6 class="ms-2 my-2">SLA 10 MIN</h6>
                                 </div>
                                 <div class="col-3 ">
-                                    <button type="button" class=" btn btn-secondary w-100">Electrical</button>
+                                    <button type="button" class=" btn btn-secondary btn-lg w-100">Electrical</button>
                                 </div>
                                 <div class="col-3 ">
-                                    <button type="button" class=" btn btn-secondary w-100">Chiller</button>
+                                    <button type="button" class=" btn btn-secondary btn-lg w-100">Chiller</button>
                                 </div>
                                 <div class="col-3 text-center h-100">
                                     <h6 class="ms-2 my-2">SLA 20 MIN</h6>
