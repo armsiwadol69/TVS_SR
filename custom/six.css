@@ -1,24 +1,32 @@
+.imageINCOMEbig {
+    animation: rotation 20s infinite linear;
+}
+
 .imageN {
     max-width: 100% !important;
-    width: 130px !important;
+    width: 130px;
+    animation: rotation 20s infinite linear;
 }
 
 .imageOutgoing {
     max-width: 69% !important;
+    animation: rotation 20s infinite linear;
 }
 
 .imageTranOut {
     max-width: 60% !important;
+    animation: rotation 20s infinite linear;
 }
 
 .inCommingCard {
     background-image: url('../image/bg_income.jpg');
     background-repeat: no-repeat;
     /* background-size: contain; */
-    background-size: 100% 100%;  /* LOL */
+    background-size: 100% 100%;
+    /* LOL */
 }
 
-img{
+img {
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -47,6 +55,7 @@ h1 {
 h2 {
     font-size: 3.0vh;
 }
+
 h3 {
     font-size: 3.0vh;
 }
@@ -95,8 +104,7 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-    max-height: 1080px;
-    max-width: 1920px; 
+    overflow-x: hidden;
 }
 
 html {
@@ -115,4 +123,86 @@ html {
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 
+}
+
+.btn-normal {
+    background: rgb(181, 255, 0);
+    background: radial-gradient(circle, rgba(181, 255, 0, 1) 0%, rgba(0, 255, 59, 1) 51%, rgba(0, 255, 188, 1) 100%);
+    background-size: 200% 200%;
+    outline: none !important;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.btn-nsa {
+    background: rgb(255,149,0);
+    background: radial-gradient(circle, rgba(255,149,0,1) 0%, rgba(215,255,0,1) 100%);
+    background-size: 200% 200%;
+    outline: none !important;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.btn-sa {
+    background: rgb(255, 0, 0);
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 142, 1) 100%);
+    background-size: 200% 200%;
+    outline: none !important;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+@-webkit-keyframes btn_ani {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-o-keyframes btn_ani {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes btn_ani {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
