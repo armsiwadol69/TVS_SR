@@ -85,20 +85,20 @@ function incomeingStatusRightSide($serviceName, $nsa, $sa)
 
 function broadcastSystemStatus($serviceName, $nsa, $sa)
 {
-    echo '<div class="containerImage">' . "\r";
+    echo '<div class="containerImage fontSize_B">' . "\r";
     if (!$sa == "0") {
 
-        echo '<img src="./image/nutzSA.png" draggable="false" class="img-fluid my-1 imageN" alt="SA">' . "\r";
+        echo '<img src="./image/nutzSA.png" draggable="false" class="img-fluid my-1 imageBroadcast" alt="SA">' . "\r";
         $statusReturn = '<span class="text-danger">SA</span>';
 
     } else if (!$nsa == "0") {
 
-        echo '<img src="./image/nutzNSA.png" draggable="false" class="img-fluid my-1 imageN" alt="NSA">' . "\r";
+        echo '<img src="./image/nutzNSA.png" draggable="false" class="img-fluid my-1 imageBroadcast" alt="NSA">' . "\r";
         $statusReturn = '<span class="text-warning">NSA</span>';
 
     } else {
 
-        echo '<img src="./image/nutzNormal.png" draggable="false" class="img-fluid my-1 imageN" alt="NORMAL">' . "\r";
+        echo '<img src="./image/nutzNormal.png" draggable="false" class="img-fluid my-1 imageBroadcast" alt="NORMAL">' . "\r";
         $statusReturn = '<span class="text-info">NORMAL</span>';
 
     }

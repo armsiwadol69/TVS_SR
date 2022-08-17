@@ -1,21 +1,31 @@
 .imageINCOMEbig {
-    animation: rotation 20s infinite linear;
+    animation: rotation 42s infinite linear;
+}
+
+.spinNutz {
+    animation: rotation 69s infinite linear;
 }
 
 .imageN {
-    max-width: 100% !important;
+    max-width: 100% ;
     width: 130px;
-    animation: rotation 20s infinite linear;
+    animation: rotation 42s infinite linear;
+}
+
+.imageBroadcast {
+    max-width: 100%;
+
+    animation: rotation 42s infinite linear;
 }
 
 .imageOutgoing {
     max-width: 69% !important;
-    animation: rotation 20s infinite linear;
+    animation: rotation 42s infinite linear;
 }
 
 .imageTranOut {
     max-width: 60% !important;
-    animation: rotation 20s infinite linear;
+    animation: rotation 42s infinite linear;
 }
 
 .inCommingCard {
@@ -48,6 +58,7 @@ img {
 
 }
 
+
 h1 {
     font-size: 5.9vw;
 }
@@ -59,10 +70,17 @@ h2 {
 h3 {
     font-size: 3.0vh;
 }
-
-p {
+.fontSize_B {
     font-size: 1.9vmin;
 }
+
+@media only screen and (max-width: 576px) {
+    .fontSize_B {
+        font-size: 3.0vmin;
+    }
+}
+
+
 
 
 /* Circular */
@@ -107,10 +125,7 @@ body {
     overflow-x: hidden;
 }
 
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
+
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -153,6 +168,20 @@ html {
     -webkit-animation: btn_ani 5s ease infinite;
     -o-animation: btn_ani 5s ease infinite;
     animation: btn_ani 5s ease infinite;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 @-webkit-keyframes btn_ani {
