@@ -39,12 +39,18 @@ if(isset($_GET['datePicker'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TVS Station Report : Daily Report</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./custom/six.css?v=2">
+    <link rel="stylesheet" href="./custom/six.css?v=2.11">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./custom/aos/aos.css">
     <link rel="preload" as="image" href="./image/nutzNormal.png">
     <link rel="preload" as="image" href="./image/nutzNSA.png">
     <link rel="preload" as="image" href="./image/nutzSA.png">
+    <style>
+        html {
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -67,9 +73,12 @@ if(isset($_GET['datePicker'])){
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Version : 0.1</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
                 </ul>
             </div>
-            <div class="d-flex">
+            <div class=" d-flex justify-content-end">
                 <button type="button" class="btn btn-secondary mx-1 " data-bs-toggle="modal" data-bs-target="#fact"><i
                         class="bi bi-calendar3"></i></button>
                 <button type="button" class="btn btn-primary" onclick="location.reload();">
@@ -80,7 +89,7 @@ if(isset($_GET['datePicker'])){
     <!-- navbar end -->
 
     <div class="container-fluid">
-        <div class="row mt-1 gy-1">
+        <div class="row mt-1">
             <div class="col-lg-4">
                 <div class="card w-100 h-100 shadow-sm" data-aos="fade-right">
                     <div class="card-body text-center inCommingCard">
@@ -95,114 +104,115 @@ if(isset($_GET['datePicker'])){
                             <div class="col-6 mt-2">
 
                                 <?php
-                                incomeingStatusRightSide('Satellite','1','0');
-                                incomeingStatusRightSide('Radio','0','0');
-                                incomeingStatusRightSide('DTT','0','0');
-                                incomeingStatusRightSide('DLTV','0','0');
-                                incomeingStatusRightSide('Fiber','0','0');
+                                incomeingStatusRightSide('<i class="bi bi-wifi"></i><br>Satellite','1','0');
+                                incomeingStatusRightSide('<i class="bi bi-speaker"></i><br>Radio','0','0');
+                                incomeingStatusRightSide('<i class="bi bi-tv"></i><br>DTT','0','0');
+                                incomeingStatusRightSide('<i class="bi bi-tv"></i><br>DLTV','0','0');
+                                incomeingStatusRightSide('<i class="bi bi-list"></i><br>Fiber','0','0');
                                 ?>
                             </div>
                             <div class=" col-12">
-                                <h6>SLA 69HRs.</h6>
+                                <h6>SLA 4 HR.</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card w-100 h-100 shadow-sm" data-aos="fade-up">
+                <div class="card w-100 h-100 shadow-sm" data-aos="fade-right">
                     <div class="card-body text-center">
                         <h3>BROADCAST SYSTEM</h3>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Router -->
                                 <?php broadcastSystemStatus('Router','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Switcher -->
                                 <?php broadcastSystemStatus('Switcher','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- ALC -->
                                 <?php broadcastSystemStatus('ALC','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Process & DA -->
                                 <?php broadcastSystemStatus('Process&DA','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Logo Gennerator -->
                                 <?php broadcastSystemStatus('Logo Gennerator','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Satellite Receiver -->
                                 <?php broadcastSystemStatus('Satellite<br>Receiver','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Delay System -->
                                 <?php broadcastSystemStatus('Delay System','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Video Server -->
                                 <?php broadcastSystemStatus('Video Server','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Automation System -->
                                 <?php broadcastSystemStatus('Automation<br>System','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Video Logging -->
                                 <?php broadcastSystemStatus('Video Logging','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- CG -->
                                 <?php broadcastSystemStatus('CG','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Virtual Graphic -->
                                 <?php broadcastSystemStatus('Virtual Graphic','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Studio -->
                                 <?php broadcastSystemStatus('Studio','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Voice & Dub -->
                                 <?php broadcastSystemStatus('Voice & Dub','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Video Converter -->
                                 <?php broadcastSystemStatus('Video Converter','0','0');?>
                             </div>
-                            <div class="col-3">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                                 <!-- Network Switch -->
                                 <?php broadcastSystemStatus('Network Switch','0','0');?>
                             </div>
 
-                            <hr class="mt-lg-5">
-
-                            <h3 c>BROADCAST FACILITY</h3>
-                            <div class="row text-center">
-                                <div class="col-3 text-center h-100">
-                                    <h6 class="ms-2 my-2">SLA 10 MIN</h6>
-                                </div>
-                                <div class="col-3 ">
-                                    <button type="button" class=" btn btn-secondary btn-lg w-100">Electrical</button>
-                                </div>
-                                <div class="col-3 ">
-                                    <button type="button" class=" btn btn-secondary btn-lg w-100">Chiller</button>
-                                </div>
-                                <div class="col-3 text-center h-100">
-                                    <h6 class="ms-2 my-2">SLA 20 MIN</h6>
-                                </div>
+                            <div class="col-12">
+                                <hr class="mt-lg-5">
+                                <h3>BROADCAST FACILITY</h3>
                             </div>
+
+                            <div class="col-6 ">
+                                <?php echo electricalStatus("SA")?>
+                            </div>
+                            <div class="col-6 ">
+                                <?php echo chillerStatus("NSA")?>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h6 class="ms-2 my-2">SLA 20 MIN</h6>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h6 class="ms-2 my-2">SLA 10 MIN</h6>
+                            </div>
+
 
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2">
-                <div class="card w-100 h-100 shadow-sm" data-aos="fade-up">
+                <div class="card w-100 h-100 shadow-sm" data-aos="fade-left">
                     <div class="card-body text-center">
                         <h3>OUTGOING</h3>
                         <div class="d-grid gap-2 w-100">
@@ -245,10 +255,13 @@ SLA 6 HR. ONLY H/E CATV & COMMUNICATION LINK"><i class="bi bi-info-square"></i><
             <div class="col-12">
                 <div class="card w-100 mt-1" data-aos="fade-up" data-aos-offset="-200">
                     <div class=" card-body d-flex justify-content-end">
-                        <Button type="button" class="btn btn-light mx-1">Total Error :</Button>
-                        <button type="button" class="btn btn-warning mx-1 ">NSA : <?php echo $totalNSA?></button>
-                        <button type="button" class="btn btn-danger  mx-1 ">SA : <?php echo $totalSA?></button>
-                        <Button type="button" class="btn btn-light mx-1 disabled">V.Testify</Button>
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <Button type="button" class="btn btn-link text-dark text-decoration-none">Total Error
+                                :</Button>
+                            <button type="button" class="btn btn-nsa ">NSA : <?php echo $totalNSA?></button>
+                            <button type="button" class="btn btn-sa">SA : <?php echo $totalSA?></button>
+                            <Button type="button" class="btn btn-normal text-dark">V.Testify</Button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,29 +295,38 @@ SLA 6 HR. ONLY H/E CATV & COMMUNICATION LINK"><i class="bi bi-info-square"></i><
                 </div>
 
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="./custom/aos/aos.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-                integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./custom/aos/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
-            <script>
-            $('img').bind('contextmenu', function(e) {
-                return false;
-            });
+    <script>
+    $('img').bind('contextmenu', function(e) {
+        return false;
+    });
 
-            AOS.init({
-                duration: 1200,
-                once: true,
-            });
+    AOS.init({
+        duration: 1200,
+        once: true,
+    });
 
 
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-            </script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    let height = screen.height;
+    let width = screen.width;
+    document.getElementById('screenHight').innerText = height;
+    document.getElementById('screenWidth').innerText = width;
+    </script>
 
 
 </body>
