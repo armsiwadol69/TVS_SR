@@ -49,7 +49,7 @@ if(isset($_GET['datePicker'])){
 
 <body>
     <!-- navbart -->
-    <nav class="navbar navbar-nav-scroll navbar-expand-lg navbar-light bg-light shadow-sm" data-aos="fade-down">
+    <nav class="navbar navbar-nav-scroll navbar-expand-lg navbar-light bg-light shadow-sm" data-aos="fade-down" hidden>
         <div class="container-fluid">
             <a class="navbar-brand" href="#">On-Air Operation Daily Report <sup>ALPHA</sup></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -86,13 +86,13 @@ if(isset($_GET['datePicker'])){
         <div class="row gy-2 gx-2">
             <!-- LIVE PROGRAM -->
             <div class="col-12 col-sm12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card text-white bg-secondary mt-2 shadow-sm w-100 h-100">
+                <div class="card mt-2 shadow-sm w-100 h-100">
                     <h3 class="card-header text-center">LIVE PROGRAM</h3>
                     <div class="card-body">
                         <div class="row gy-1 gx-1">
                             <!-- PLAYOUT -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-primary w-100 h-100">
+                                <div class="card cardLiveProgramPlayout text-white w-100 h-100">
                                     <div class="card-body align-items-center text-center">
                                         <h3 class="w-100 text-center">PLAYOUT</h3>
                                         <h2 class="fw-bold w-100">23</h2>
@@ -101,23 +101,23 @@ if(isset($_GET['datePicker'])){
                                 </div>
                             </div>
                             <div class="col-6 col-6 col-lg-6">
-                                <div class="card bg-primary w-100 h-100">
-                                    <div class="card-body text-start">
-                                        <h6>STUDIO TIPCO : 5</h6>
+                                <div class="card cardLiveProgramPlayout text-white w-100 h-100">
+                                    <div class="card-body text-start smolText" >
+                                    <h6 class="smolText">STUDIO TIPCO : 5</h6>
 
-                                        <h6>STUDIO TAYAN : 8</h6>
+                                    <h6 class="smolText">STUDIO TAYAN : 8</h6>
 
-                                        <h6>INTRERNAL VOICE : 10</h6>
+                                    <h6 class="smolText">INTRERNAL VOICE : 10</h6>
 
-                                        <h6>EXTERNAL VOICE : 0</h6>
+                                    <h6 class="smolText">EXTERNAL VOICE : 0</h6>
 
                                     </div>
                                 </div>
                             </div>
                             <!-- TAC -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-primary w-100 h-100">
-                                    <div class="card-body align-items-center text-center">
+                                <div class="card text-white w-100 h-100">
+                                    <div class="card-body cardLiveProgramTAC align-items-center text-center">
                                         <h3 class="w-100 text-center">TAC</h3>
                                         <h2 class="fw-bold w-100">1</h2>
 
@@ -125,16 +125,16 @@ if(isset($_GET['datePicker'])){
                                 </div>
                             </div>
                             <div class="col-6 col-6 col-lg-6">
-                                <div class="card bg-primary w-100 h-100">
+                                <div class="card cardLiveProgramTAC text-white w-100 h-100">
                                     <div class="card-body text-start">
-                                        <h6>INTRERNAL VOICE : 1</h6>
-                                        <h6>EXTERNAL VOICE : 0</h6>
+                                        <h6 class="smolText">INTRERNAL VOICE : 1</h6>
+                                        <h6 class="smolText">EXTERNAL VOICE : 0</h6>
                                     </div>
                                 </div>
                             </div>
                             <!-- TNN16/TURE4U -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-primary w-100 h-100">
+                                <div class="card cardLiveProgramTrue4Utnn text-white w-100 h-100">
                                     <div class="card-body align-items-center text-center">
                                         <h4 class="w-100 text-center">TNN16 / True4U</h4>
                                         <h2 class="fw-bold">16</h2>
@@ -143,15 +143,15 @@ if(isset($_GET['datePicker'])){
                                 </div>
                             </div>
                             <div class="col-6 col-6 col-lg-6">
-                                <div class="card bg-primary w-100 h-100">
+                                <div class="card cardLiveProgramTrue4Utnn text-white w-100 h-100">
                                     <div class="card-body text-start">
-                                        <h6>STUDIO TIPCO : 4</h6>
+                                        <h6 class="smolText">STUDIO TIPCO : 4</h6>
 
-                                        <h6>STUDIO TAYAN : 12</h6>
+                                        <h6 class="smolText">STUDIO TAYAN : 12</h6>
 
-                                        <h6>INTRERNAL VOICE : 0</h6>
+                                        <h6 class="smolText">INTRERNAL VOICE : 0</h6>
 
-                                        <h6>EXTERNAL VOICE : 0</h6>
+                                        <h6 class="smolText">EXTERNAL VOICE : 0</h6>
                                     </div>
                                 </div>
                             </div>
@@ -165,13 +165,13 @@ if(isset($_GET['datePicker'])){
 
             <!-- ADVERTISING & SPONSOR -->
             <div class="col-12 col-sm12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card text-white bg-secondary h-100 mt-2 shadow-sm">
+                <div class="card text-dark h-100 mt-2 shadow-sm">
                     <h3 class="card-header text-center">ADVERTISING & SPONSOR</h3>
                     <div class="card-body d-flex align-items-center justify-content-center">
                         <div class="row gy-1 gx-1">
                             <!-- PLAYOUT -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-warning w-100 h-100">
+                                <div class="card cardADVSPON_Playout w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">PLAYOUT</h3>
                                         <h2 class="fw-bold">865</h2>
@@ -180,17 +180,16 @@ if(isset($_GET['datePicker'])){
                                 </div>
                             </div>
                             <div class="col-6 col-6 col-lg-6">
-                                <div class="card bg-warning w-100 h-100">
+                                <div class="card cardADVSPON_Playout w-100 h-100">
                                     <div class="card-body text-start">
-                                        <h6>PLAYOUT: 5</h6>
-
-                                        <h6>STUDIO TAYAN : 8</h6>
+                                        <h6>ADVERTISING : 861</h6>
+                                        <h6>SPONSOR : 4</h6>
                                     </div>
                                 </div>
                             </div>
                             <!-- TAC -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-warning w-100 h-100">
+                                <div class="card cardADVSPON_TAC w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">TAC</h3>
                                         <h2 class="fw-bold">0</h2>
@@ -199,7 +198,7 @@ if(isset($_GET['datePicker'])){
                                 </div>
                             </div>
                             <div class="col-6 col-6 col-lg-6">
-                                <div class="card bg-warning w-100 h-100">
+                                <div class="card cardADVSPON_TAC w-100 h-100">
                                     <div class="card-body text-start">
                                         <h6>ADVERTISING : 0</h6>
                                         <h6>SPONSOR : 0</h6>
@@ -216,13 +215,13 @@ if(isset($_GET['datePicker'])){
 
             <!-- REQUEST -->
             <div class="col-12 col-sm12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card text-white bg-secondary h-100 mt-2 shadow-sm">
+                <div class="card text-dark h-100 mt-2 shadow-sm">
                     <h3 class="card-header text-center">REQUEST</h3>
                     <div class="card-body d-flex align-items-center justify-content-center">
                         <div class="row gy-1 gx-1">
                             <!-- POPUP SPONSOR -->
                             <div class="col-12 col-lg-12">
-                                <div class="card bg-warning w-100 h-100">
+                                <div class="card cardREQUEST_PS w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">POPUP SPONSOR</h3>
                                         <h2 class="fw-bold">0</h2>
@@ -232,7 +231,7 @@ if(isset($_GET['datePicker'])){
                             </div>
                             <!-- POPUP -->
                             <div class="col-6 col-6 col-lg-6">
-                                <div class="card bg-warning w-100 h-100">
+                                <div class="card cardREQUEST_PSbelow w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">POPUP SPONSOR</h3>
                                         <h2 class="fw-bold">0</h2>
@@ -242,7 +241,7 @@ if(isset($_GET['datePicker'])){
                             </div>
                             <!-- STREAMER -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-warning w-100 h-100">
+                                <div class="card cardREQUEST_PSbelow w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">STREAMER</h3>
                                         <h2 class="fw-bold">0</h2>
@@ -259,23 +258,58 @@ if(isset($_GET['datePicker'])){
             </div>
             <!-- SPECIAL EVENT -->
             <div class="col-12 col-sm12 col-md-6 col-lg-3 col-xl-3">
-                <div class="card text-white bg-success h-100 mt-2 shadow-sm">
+                <div class="card text-dark cardSPECIAL_EVENT h-100 mt-2 shadow-sm">
                     <h3 class="card-header text-center">SPECIAL EVENT</h3>
-                    <div class="card-body">
-                        <img src="./image/nutzNRT0.png" class="img-fluid spinNutz" alt="">
+                    <div class="card-body text-white">
+                        <!-- <img src="./image/nutzNRT0.png" class="img-fluid spinNutz" alt=""> -->
+                        <p><strong>คืนวันจันทร์ที่ 15 สิงหาคม 2565</strong></p>
+                        <ul>
+                            <li>02.00 น. ลิเวอร์พูล VS คริสตัล พาเลซ :&nbsp;<strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd1">True Premier
+                                        Football 1</a></strong> ,&nbsp;<strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd2">True Premier
+                                        Football 2</a></strong></li>
+                        </ul>
+                        <p><strong>วันเสาร์ที่ 20 สิงหาคม 2565</strong></p>
+                        <ul>
+                            <li>18.30 น. สเปอร์ส VS วูล์ฟแฮมป์ตัน : <strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd1">True Premier
+                                        Football 1</a></strong> ,&nbsp;<strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd2">True Premier
+                                        Football 2</a></strong></li>
+                            <li>21.00 น. เอฟเวอร์ตัน VS น็อตติ้งแฮม ฟอเรสต์ : <strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd1">True Premier
+                                        Football 1</a></strong> ,&nbsp;<strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd2">True Premier
+                                        Football 2</a></strong></li>
+                            <li>21.00 น. เลสเตอร์ VS เซาธ์แฮมป์ตัน :&nbsp;<strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd3">True Premier
+                                        Football 3</a></strong></li>
+                            <li>21.00 น. ฟูแล่ม VS เบรนท์ฟอร์ด : <strong><a
+                                        href="https://sport.trueid.net/live/idstation">ID Station (894)</a></strong>
+                            </li>
+                            <li>21.00 น. คริสตัล พาเลซ VS แอสตัน วิลล่า :&nbsp;<strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd6">True Premier
+                                        Football 6</a></strong></li>
+                            <li>23.30 น. บอร์นมัธ VS อาร์เซน่อล : <strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd1">True Premier
+                                        Football 1</a></strong> ,&nbsp;<strong><a
+                                        href="https://sport.trueid.net/live/truepremierfootballhd2">True Premier
+                                        Football 2</a></strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <!-- PROBLEM -->
             <div class="col-12 col-sm12 col-md-12 col-lg-3 col-xl-3">
-                <div class="card text-white bg-secondary h-100 mt-2 shadow-sm">
+                <div class="card text-dark h-100 mt-2 shadow-sm">
                     <h3 class="card-header text-center">PROBLEM</h3>
                     <div class="card-body d-flex align-items-center justify-content-center">
                         <div class="row gy-1 gx-1">
                             <!-- SUBTITLE -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-danger w-100 h-100">
+                                <div class="card cardProblemSD w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">SUBTITLE</h3>
                                         <h2 class="fw-bold">0</h2>
@@ -284,7 +318,7 @@ if(isset($_GET['datePicker'])){
                             </div>
                             <!-- DUBBING -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-danger w-100 h-100">
+                                <div class="card cardProblemSD w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">DUBBING</h3>
                                         <h2 class="fw-bold">0</h2>
@@ -293,7 +327,7 @@ if(isset($_GET['datePicker'])){
                             </div>
                             <!-- EQUIPMENT -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-danger w-100 h-100">
+                                <div class="card cardProblemEC w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">EQUIPMENT</h3>
                                         <h2 class="fw-bold">1</h2>
@@ -302,7 +336,7 @@ if(isset($_GET['datePicker'])){
                             </div>
                             <!-- CENSOR -->
                             <div class="col-6 col-lg-6">
-                                <div class="card bg-danger w-100 h-100">
+                                <div class="card cardProblemEC w-100 h-100">
                                     <div class="card-body d-flex align-items-center justify-content-center flex-wrap">
                                         <h3 class="w-100 text-center">CENSOR</h3>
                                         <h2 class="fw-bold">0</h2>
@@ -324,10 +358,10 @@ if(isset($_GET['datePicker'])){
                     <h3 class="card-header text-start">PROBLEM DETAIL & CORRECTIVE</h3>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 text-dark">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 text-dark mt-1">
                                 <div class="card my-1 w-100">
                                     <div class="card-body">
-                                        <i class="bi bi-clock-history"></i> เวลา 16.00-00.00 น.
+                                        <i class="bi bi-clock-history"></i> เวลา : 16.00-00.00 น.
                                     </div>
                                 </div>
                                 <div class="card my-1 w-100">
@@ -338,7 +372,7 @@ if(isset($_GET['datePicker'])){
                                 </div>
                                 <div class="card my-1 w-100">
                                     <div class="card-body">
-                                        <span class="badge bg-danger">ปัญหา</span>เวลา 19.10 น. ขณะ Manual ออกอากาศโฆษณา
+                                        <span class="badge bg-danger">ปัญหา</span> เวลา 19.10 น. ขณะ Manual ออกอากาศโฆษณา
                                         Code TVC202203088X1HD
                                         พบปัญหาสัญญาณภาพไม่เต็มจอลักษณะ Sync ไม่ Lock
                                         <br>
@@ -355,7 +389,7 @@ if(isset($_GET['datePicker'])){
                             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                                 <div class="videoWrapper">
                                     <iframe width="560" height="315" class="rounded"
-                                        src="https://www.youtube.com/embed/DlyG6MAKUOA?controls=0"
+                                        src="https://www.youtube.com/embed/ZwQnobpe_lI"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
