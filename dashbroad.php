@@ -55,7 +55,7 @@ if(isset($_GET['datePicker'])){
 
 <body>
     <!-- navbart -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" data-aos="fade-down">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" data-aos="fade-down" hidden>
         <div class="container-fluid">
             <a class="navbar-brand" href="#">TVS Station Report<sup>ALPHA</sup></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -89,7 +89,7 @@ if(isset($_GET['datePicker'])){
     <!-- navbar end -->
 
     <div class="container-fluid">
-        <div class="row mt-1">
+        <div class="row gy-1 mt-1">
             <div class="col-lg-4">
                 <div class="card w-100 h-100 shadow-sm" data-aos="fade-right">
                     <div class="card-body text-center inCommingCard">

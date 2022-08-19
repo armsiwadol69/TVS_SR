@@ -7,7 +7,7 @@
 }
 
 .imageN {
-    max-width: 100% ;
+    max-width: 100%;
     width: 130px;
     animation: rotation 42s infinite linear;
 }
@@ -70,6 +70,7 @@ h2 {
 h3 {
     font-size: 3.0vh;
 }
+
 .fontSize_B {
     font-size: 1.9vmin;
 }
@@ -151,8 +152,8 @@ body {
 }
 
 .btn-nsa {
-    background: rgb(255,149,0);
-    background: radial-gradient(circle, rgba(255,149,0,1) 0%, rgba(215,255,0,1) 100%);
+    background: rgb(255, 149, 0);
+    background: radial-gradient(circle, rgba(255, 149, 0, 1) 0%, rgba(215, 255, 0, 1) 100%);
     background-size: 200% 200%;
     outline: none !important;
     -webkit-animation: btn_ani 5s ease infinite;
@@ -171,17 +172,117 @@ body {
 }
 
 .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
 }
+
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cardLiveProgramPlayout {
+    background: rgb(0, 0, 153);
+    background: radial-gradient(circle, rgba(0, 0, 153, 1) 0%, rgba(54, 54, 181, 1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardLiveProgramTAC {
+    background: rgb(0, 83, 241);
+    background: radial-gradient(circle, rgba(0, 83, 241, 1) 0%, rgba(54, 54, 181, 1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardLiveProgramTrue4Utnn {
+    background: rgb(106, 157, 255);
+    background: radial-gradient(circle, rgba(106, 157, 255, 1) 0%, rgba(54, 54, 181, 1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardADVSPON_Playout {
+    background: rgb(255, 219, 76);
+    background: radial-gradient(circle, rgba(255, 219, 76, 1) 0%, rgba(205, 164, 0, 1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardADVSPON_TAC {
+    background: rgb(242, 196, 0);
+    background: radial-gradient(circle, rgba(242, 196, 0, 1) 0%, rgba(196, 167, 50, 1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardREQUEST_PS {
+    background: rgb(255, 146, 37);
+    background: radial-gradient(circle, rgba(255, 146, 37, 1) 0%, rgba(255, 187, 120, 1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardREQUEST_PSbelow {
+    background: rgb(255,168,109);
+    background: radial-gradient(circle, rgba(255,168,109,1) 0%, rgba(233,122,12,1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardSPECIAL_EVENT {
+    background: rgb(0,176,80);
+    background: radial-gradient(circle, rgba(0,176,80,1) 0%, rgba(0,120,54,1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardProblemSD {
+    background: rgb(255,101,101);
+    background: radial-gradient(circle, rgba(255,101,101,1) 0%, rgba(250,46,46,1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+.cardProblemEC {
+    background: rgb(255,133,136);
+    background: radial-gradient(circle, rgba(255,133,136,1) 0%, rgba(205,89,89,1) 88%);
+    background-size: 200% 200%;
+    -webkit-animation: btn_ani 5s ease infinite;
+    -o-animation: btn_ani 5s ease infinite;
+    animation: btn_ani 5s ease infinite;
+}
+
+a {
+    color: white;
+}
+
+.smolText{
+    font-size: 0.9rem !important;
 }
 
 @-webkit-keyframes btn_ani {
